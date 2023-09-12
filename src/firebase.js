@@ -1,18 +1,22 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDrQ5wFEmxmb2ufLR92u8Pf03XnzbJfD40",
-  authDomain: "meesho-bb4be.firebaseapp.com",
-  projectId: "meesho-bb4be",
-  storageBucket: "meesho-bb4be.appspot.com",
-  messagingSenderId: "33205164699",
-  appId: "1:33205164699:web:76c07b04a927559b1cc43e",
-  measurementId: "G-86LDENJKKR"
-
-  
+  apiKey: "AIzaSyAlXsTFO8joyoDE5dTJ7BSJ3eoCxTV808s",
+  authDomain: "meesho-kitto.firebaseapp.com",
+  databaseURL: "https://stock-collection-4e8cf-default-rtdb.firebaseio.com",
+  projectId: "meesho-kitto",
+  storageBucket: "meesho-kitto.appspot.com",
+  messagingSenderId: "280889992758",
+  appId: "1:280889992758:web:1a45a74d8be59b4d5f9a97",
+  measurementId: "G-8YYJ04X1SZ"
 };
 
+// Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth();
